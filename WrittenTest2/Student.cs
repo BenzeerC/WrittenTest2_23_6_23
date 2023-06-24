@@ -17,25 +17,12 @@ namespace WrittenTest2
 
         public int total { get; set; }
 
-        //public Student()
-        //{
-        //    this.studentId = studentId;
-        //    this.studentname = studentname;
-        //    this.percentage = percentage;
-        //    this.total = total;
-        //}
         public void GetPercentage() 
         {
             percentage = total / 5;
            // return percentage;
 
         }
-
-        //public string PrintDetails()
-        //{
-        //    return $"\nStudent Id:{studentId}\nStudent Name:{studentname}\nPercentage:{percentage}";
-        //}
-
         public static void Main(string[] args)
         {
             // Setting properties  
@@ -53,12 +40,7 @@ namespace WrittenTest2
             Console.WriteLine("Percentage:"+student.percentage);
            
             
-            //Console.WriteLine(student.PrintDetails());
-
-            //Student student1 = new Student(22, "Ridhiman", 380);
-            //student1.GetPercentage();
-            //Console.WriteLine(student1.PrintDetails());
-            
+           
         }
 
     }
