@@ -8,6 +8,12 @@ namespace WrittenTest2
 {
     //Create class Student, with roll no , name , percentage auto implemented properties.
     //Use property initialize syntax to assign the values. Print the student details
+
+    // public enum Streams { CS,IT,Electrical,Electronic,Mach, Civil};
+
+    // Use above declared enum in Student class
+    public enum Streams { CS, IT, Electrical, Electronic, Mach, Civil };
+
     public class Student
     {
         // Auto-implimented Properties  
@@ -16,6 +22,8 @@ namespace WrittenTest2
         public float percentage { get; set; }
 
         public int total { get; set; }
+
+        private Streams stream { get; set; }
 
         public void GetPercentage() 
         {
@@ -31,6 +39,7 @@ namespace WrittenTest2
                 studentId = 1,
                 studentname = "Rajashree",
                 total = 450
+                //Streams. CS
             };
 
             student.GetPercentage();
@@ -38,6 +47,7 @@ namespace WrittenTest2
             Console.WriteLine("Student Id:"+student.studentId);
             Console.WriteLine("Student Name:"+student.studentname);
             Console.WriteLine("Percentage:"+student.percentage);
+            Console.WriteLine(Streams.CS);
            
             
            
